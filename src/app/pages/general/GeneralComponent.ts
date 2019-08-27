@@ -8,7 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 export class GeneralComponent implements OnInit, OnDestroy {
   private sub: any;
   lang: string;
+  
   constructor(private route: ActivatedRoute) { }
+  
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.lang = params['lang'];

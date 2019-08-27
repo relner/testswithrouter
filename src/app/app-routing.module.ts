@@ -6,7 +6,7 @@ import { MainComponent } from './pages/main/main.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'en', pathMatch: 'full' },
+  // { path: '', redirectTo: 'en', pathMatch: 'full' },
   // { path: '**', redirectTo: 'en', pathMatch: 'full' },
   { path: ':lang', component: GeneralComponent,
     children:[
